@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        .vmin{
+            height: 50vmin;
+            background-color: rgb(184, 184, 242);
+        }
+        .vmax{
+            width: 60vmax;
+            background-color: lightskyblue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!-- 5.vmin :- Relative to 1% of viewport's* smaller dimension(in phones vmin = width and in systems vmin = height). -->
+     <div class="vmin">Relative to 1% of viewport's smaller dimension(phone's smaller dimension its width and laptop's height).</div>
+
+     <!-- 6.vmax :- Relative to 1% of viewport's larger dimension(in phones vmax = height and in systems vmax = width) -->
+      <div class="vmax">Relative to 1% of viewport's larger dimension(in phones vmax = height and in systems vmax = width)</div>
+</body>
+</html>

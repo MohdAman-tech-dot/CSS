@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        /* margin collapse --> Margin collapse means hota h 1 element ki dusri element pe margin overlap hona. 
+        magin collapde me 2 element me ek ki hee margin lagegi jiski jada hogi uski isme box2 ki margin jada.*/
+        .box1 {
+            margin: 15px;
+            padding: 5px;
+            border: 2px solid black;
+            background-color: darkolivegreen;
+            color: azure;
+        }
+
+        .box2 {
+            margin: 25px;
+            padding: 3px;
+            border: 2px solid rgb(12, 2, 64);
+            background-color: rgb(179, 191, 242);
+            color: rgb(68, 71, 71);
+        }
+        
+        /* agar height 100px h to box-sizing: border-box uski padding,border or content ki all over height hogi 100px;
+            or agar border-box nhi kiya sirf height de rakhi h to only content ki hee height 100px hogi baaki sab ki alag count hogi; */
+            /* if we use border-box then (element-Margin+padding+border=height) */
+            /* if we not use border-box then (element-height=height) */
+            .box3{
+                margin: 20px;
+                padding: 6px;
+                border: solid green;
+                height: 100px;
+                background-color: rgb(167, 243, 167);
+                box-sizing: border-box;
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- margin collapse:- Margin collapse means hota h 1 element ki dusri element pe margin overlap hona. 
+        magin collapde me 2 element me ek ki hee margin lagegi jiski jada hogi uski isme box2 ki margin jada. -->
+
+    <div class="box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, error?</div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, repudiandae necessitatibus quis voluptatum
+        minima ipsam.
+    </div>
+
+    <!-- Note:- agar height 100px h to box-sizing: border-box uski padding,border or content ki all over height hogi 100px; 
+    or agar border-box nhi kiya sirf height de rakhi h to only content ki hee height 100px hogi baaki sab ki alag count
+    hogi; -->
+    <!-- if we use border-box then (element-Margin+padding+border=height) */ -->
+    <!-- if we not use border-box then (element-height=height) -->
+    <div class="box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam!</div>
+
+</body>
+
+</html>

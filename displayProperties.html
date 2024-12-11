@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        /* convert a block element to inline element */
+        .box {
+            width: 250px;
+            padding: 20px;
+            margin: 15px;
+            border: 3px solid crimson;
+            /* display: flex;   */
+            /* justify-content: center;     It controls the horizontal alignment of items within a flex container. */
+            /* display: inline;    Does not respect width and height, and padding top and bottom overlap over the lines above and under */
+            display: inline-block;
+            Respects top and bottom margins and paddings,
+            and allows you to set a width and height on the element
+        }
+
+        .box1 {
+            /* display: none;  display:none removes the element from the document. */
+            /* visibility: hidden;     visibility:hidden hides the element, but it still takes up space in the layout.  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        Mohd Aman
+    </div>
+    <div class="box">
+        S/O Mohd Aiyyoob
+    </div>
+</body>
+
+</html>

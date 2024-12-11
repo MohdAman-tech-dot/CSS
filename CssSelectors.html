@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* class selectors */
+        .green {
+            color: rgb(156, 177, 177);
+            background-color: green;
+            text-decoration: dashed;
+        }
+
+        /* id selectors */
+        #blue {
+            color: white;
+            background-color: blue;
+        }
+
+        /* child selectors: if a tag element present in other element than child selector use*/
+        div>p {
+            color: whitesmoke;
+            background-color: purple;
+        }
+
+        /* Descendent selectors: if a tag element present in other element's element than use Descedent selector*/
+        div p {
+            color: green;
+            background-color: aquamarine;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selectors */
+        a:visited {
+            color: rgb(59, 171, 98);
+        }
+
+        a:link {
+            color: dark grey;
+        }
+
+        a:active {
+            background-color: rgb(5, 98, 186);
+        }
+
+        a:hover {
+            background-color: rgb(182, 240, 65);
+        }
+
+        p:first-child {
+            background-color: rgb(25, 41, 41);
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- class selectors -->
+    <div class="green">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, tenetur!</div>
+    <div style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+    <!-- id selectors -->
+    <span id="blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit natus eligendi quod.</span>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+
+    <!-- child selectors -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum dolorum explicabo repellat, commodi alias
+            consequatur sit. Repudiandae, quasi a! Tempora ipsum enim asperiores quas cupiditate alias nulla inventore
+            dolorem.</p>
+    </div>
+
+    <!-- Descendent selectors -->
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis hic explicabo facere iusto quos. Eos
+                ipsa nostrum quo asperiores cum hic ipsum eaque rem officia quidem, in, fuga, amet neque.</p>
+        </article>
+    </div>
+
+    <!-- Pseudo selectors -->
+    <a href="https://www.linkedin.com">Visit linkedin</a>
+    <a href="https://www.youtube.com">Visit youtube2</a>
+
+    <div>
+        <p>i am first child of yours</p>
+        <p>i am second child</p>
+    </div>
+
+</body>
+
+</html>
