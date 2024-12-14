@@ -1,0 +1,67 @@
+.layout{
+    padding: 50px 250px;
+}
+nav{
+    border: 3px solid gray;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(0, 0, 0);
+}
+.navBar{
+    border: 2px solid gray;
+    height: 30px;
+    background-color: steelblue;
+}
+
+.navBar .body{
+    display: flex;
+}
+.body{
+    border: 1.5px solid black;
+    height: 230px;
+    margin: 50px 10px 0 10px;
+    background-color: rgb(244, 186, 215);
+}
+.body .box1{
+    border: 3px solid black;
+    height: 180px;
+    width: 20vw;
+    margin: 18px 0 0 35px;
+    background-color: greenyellow;
+}
+.body .box2{
+    border: 3px solid black;
+    height: 180px;
+    width: 20vw;
+    margin: 18px 35px 0 20px;
+    background-color: crimson;
+}
+
+.navBar .content{
+    border: 2px solid rgb(3, 33, 124);
+    border-radius: 30px;
+    background-color: rgb(92, 128, 38);
+    width: 350px;
+    height: 100px;
+    margin: 70px 0 0 30px;   
+
+}
+
+.content .text{
+    text-align: center;
+    margin-top: 25px;
+}
+.footer{
+    border: 1px solid rgb(107, 14, 14);
+    height: 40px;
+    width: 498px;
+    background-color: rgb(241, 234, 234);
+    margin-top: 473px;
+}
+
+.logo img{
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    margin: 1px 0px 0px 380px; 
+}
