@@ -1,0 +1,52 @@
+ /* Pseudo elements */
+ .boxes::before {
+    content: "M-A Enterprises";
+    color: rgb(228, 141, 3);
+}
+
+a::after {
+    display: block;
+    content: "Mohd Aman Owner of this Enterprises";
+    color: aquamarine;
+    background-color: rgb(108, 113, 81);
+    margin-bottom: 10px;
+}
+
+::selection {
+    color: rgb(124, 124, 63);
+    background-color: black;
+}
+
+p::first-letter {
+    font-size: xx-large;
+}
+
+input::placeholder {
+    color: rgb(91, 91, 140);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.box {
+    border: 1.5px solid steelblue;
+}
+
+.box:first-child {
+    background-color: rgb(72, 211, 204);
+    color: coral;
+}
+
+.box:last-child {
+    color: crimson;
+}
+
+.box:nth-child(2) {
+    color: rgb(102, 195, 10);
+}
+
+/* Group selectors */
+a,
+p,
+.box {
+    font-size: 15px;
+}
