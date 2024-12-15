@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraction unit</title>
+    <style>
+        .container{
+            border: 3px solid maroon;
+            width: 80vw;
+            height: 80vh;
+            display: grid;
+            /*grid-template-columns: 1fr 2fr 1fr;*/ /*fr unit:- specifies the take space of container's row or column*/
+            /*grid-template-columns: repeat(4, 1fr);*/  /*we can repeat fr to use repeat(repeat no., fr) */
+            grid-template-columns: repeat(4,minmax(50px,1fr)); 
+            gap: 20px 35px ;
+            place-content: center;  /*justify content and align content dono hee center ho jayenge*/
+        }
+        .item{
+            /* width: 100px; */
+            height: 100px;
+            border: 2px solid rgb(91, 91, 216);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
