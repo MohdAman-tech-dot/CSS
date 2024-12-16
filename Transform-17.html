@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Properties</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            height: 80vh;
+            width: 80vw;
+            margin: 100px 100px;
+        }
+
+        .box1 {
+            border: 2px solid steelblue;
+            height: 80px;
+            width: 80px;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Transform properties */
+            /* rotate property*/
+            transform: rotate(180deg);
+            /* transform: rotateX(50deg); */
+            /* transform: rotateY(70deg); */
+
+            transform-origin: 0% 0%;
+
+            /* translate property */
+            /* transform: translate(90px); */
+            /* transform: translateY(80%); */
+
+            /* skew property */
+            /* transform: skew(50deg); */
+            /* transform: skewY(30deg);  */
+
+            /* if you want to use more than one transform properties than apply this way */
+            /* transform: translateX(90px) translateY(-30px) skew(40deg) rotate(10deg); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">Box</div>
+    </div>
+</body>
+
+</html>
