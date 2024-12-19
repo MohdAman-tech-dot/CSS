@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div ul {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin: -20px 0 0 550px;
+}
+
+.container {}
+
+ul li {
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div .logo img {
+    height: 80px;
+    width: 200px;
+    margin-left: 100px;
+}
+
+div .logo {
+    height: 50px;
+}
+
+li img {
+    height: 20px;
+    width: 20px;
+}
+
+.first {
+    margin: 100px 270px 40px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.firstBranch {
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 35px;
+}
+
+.btn a {
+    color: #fff;
+    background-color: #00b6d1;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.download {
+    display: flex;
+    font-size: 30px;
+    margin: 90px 60px 0;
+}
+
+.download img {
+    height: 80px;
+    width: 80px;
+    margin: -23px 10px 0 100px;
+}
+
+.download small {
+    font-size: 17px;
+    margin-top: 11px;
+}
+
+/* first row of download in different languages  */
+.language-1 {            
+    display: flex;
+    gap: 180px;
+    text-align: center;
+    margin: 50px 220px 0px;
+}
+
+.language-1 b {
+    background-color: #00b6d1;
+    border-radius: 6px;
+    padding: 7px 25px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.language-1 h3 {
+    font-size: 15px;
+    /* text-align: center; */
+    font-weight: 100;
+}
+
+.language-1 .button {
+    display: flex;
+    gap: 20px;
+}
+
+.language-1 .button a {
+    color: #fff;
+}
+
+.language-1 .button-32 {
+    background-color: #00b6d1;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 10px;
+
+
+}
+
+.language-1 .button-64 {
+    background-color: #5cb85c;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 10px;
+
+}
+
+/* Second row of download in different languages  */
+.language-2 {
+    display: flex;
+    gap: 180px;
+    text-align: center;
+    margin: 50px 220px 0px;
+}
+
+.language-2 b {
+    background-color: #00b6d1;
+    border-radius: 6px;
+    padding: 7px 25px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.language-2 h3 {
+    font-size: 15px;
+    /* text-align: center; */
+    font-weight: 100;
+}
+
+.language-2 .button {
+    display: flex;
+    gap: 20px;
+}
+
+.language-2 .button a {
+    color: #fff;
+}
+
+.language-2 .button-32 {
+    background-color: #00b6d1;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 10px;
+
+
+}
+
+.language-2 .button-64 {
+    background-color: #5cb85c;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 10px;
+
+}
