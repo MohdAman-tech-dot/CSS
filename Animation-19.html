@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            height: 50vh;
+            width: 50vw;
+            background-color: rgb(4, 45, 4);
+        }
+
+        .box {
+            height: 5vh;
+            width: 5vw;
+            /* background-color: rgb(167, 250, 167); */
+            color: white;
+
+            /* The animation-name property specifies a name for the @keyframes animation. */
+            animation-name: Aman;
+
+            /* The animation-duration property defines how long an animation should take to complete one cycle. */
+            animation-duration: 5s;
+
+            /*
+            1. ease:-       Default value, The animation has a slow start, then fast, before it ends slowly
+            2. ease-in:-    The animation has a slow start
+            3.ease-out:-    The animation has a slow end 
+            4.ease-in-out:- The animation has both a slow start and a slow end*/
+            animation-timing-function: ease-in;
+
+            /* The animation-delay property specifies a delay for the start of an animation. */
+            animation-delay: 1s;
+
+            /* The animation-iteration-count property specifies the number of times an animation should be played. */
+            animation-iteration-count: infinite;
+
+            /* The animation-direction property defines whether an animation should be played forward, backward or in alternate cycles. */
+            /* animation-direction: reverse; */
+
+            /* The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both). CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior. */
+            animation-fill-mode: backwards;
+
+        }
+
+       
+        @keyframes Aman {
+            from {
+                transform: translateX(100px) translateY(100px);
+                background-color: rgb(133, 151, 186);
+            }
+
+            to {
+                background-color: rgb(212, 241, 154);
+                transform: translateX(300px) translateY(220px);
+            }
+        }
+
+        .container-1{
+            height: 400px;
+            width: 500px;
+            background-color: crimson;
+        }
+
+        .box-1{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(69, 194, 248);
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: Aman2 3s infinite;
+        }
+
+        @keyframes Aman2 {
+            from {
+                background-color: rgb(172, 42, 205);
+            }
+
+            to {
+
+            }
+            
+            0% {
+                transform: rotate(90deg);
+            }
+
+            25% {
+                transform: rotate(180deg);
+            }
+
+            50% {
+                transform: rotate(270deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+    <div class="container-1">
+        <div class="box-1">Aman</div>
+    </div>
+</body>
+
+</html>
