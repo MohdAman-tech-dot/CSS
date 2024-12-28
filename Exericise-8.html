@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouncing Ball</title>
-    <style>
-        .container{
-            height: 90vh;
-            width: 70vw;
-            background-color: blue;
-            position: relative;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing Ball Animation</title>
+  <style>
+    /* Reset body margin and set the viewport height */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* Align at the bottom of the screen */
+      background-color: blue;
+    }
 
-        .ball{
-            height: 90px;
-            width: 90px;
-            background-color: red;
-            border-radius: 60px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
+    /* Container to hold the ball */
+    .ball-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
 
-            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-            animation: Bouncing-1 1s cubic-bezier(0.74, -0.17, 0.51, 1.32) 0s 5;
-            /* animation: Bouncing-2 3s cubic-bezier(0.74, -0.17, 0.51, 1.32) 0s 5; */
-            
-                        
-        }
+    /* The ball itself */
+    .ball {
+      position: absolute;
+      bottom: 0; /* Start at the bottom of the container */
+      left: 10px; /* Start from the left side */
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: red;
+      animation: throwBall 1.5s cubic-bezier(0.4, 0, 0.2, 1) 1; /* Smooth forward motion with bounce */
 
-        @keyframes Bouncing-1 {
-            from{
-                bottom: 0;
-                
-            }
-            to{
-                top: 300px;
-            }
-        }
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
 
-        @keyframes Bouncing-2 {
-            from{
-                top: 300px;
-                left: 0;
-            }
-            to{
-                left: ;
-                bottom: 0;
-            }
-        }
-    </style>
+    /* Keyframes to simulate forward motion and bouncing */
+    @keyframes throwBall {
+      0% {
+        transform: translateX(0) translateY(0); /* Start at the bottom-left */
+      }
+      15% {
+        transform: translateX(150px) translateY(-200px); /* Move forward and bounce up */
+      }
+      30% {
+        transform: translateX(300px) translateY(0); /* Move forward and return to the ground */
+      }
+      45% {
+        transform: translateX(450px) translateY(-150px); /* Bounce slightly up */
+      }
+      60% {
+        transform: translateX(600px) translateY(0); /* Move forward and hit the ground */
+      }
+      75% {
+        transform: translateX(750px) translateY(-100px); /* Bounce slightly up */
+      }
+      90% {
+        transform: translateX(900px) translateY(0); /* Bounce slightly up */
+      }
+
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="ball"></div>
-    </div>
+  <div class="ball-container">
+    <div class="ball"></div>
+  </div>
 </body>
 </html>
+
