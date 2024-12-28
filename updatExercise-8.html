@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        .container{
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+            background-color: blue;
+            position: relative;
+        }
+        .container .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            animation: translateX 3s linear 2, translateY 1s ease-out 3;
+        }
+
+        @keyframes translateX {
+            from{
+                left: -50px;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+        @keyframes translateY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
